@@ -1,5 +1,5 @@
 export const defaultConfig = {
-  bot_profile: "natural_conversation_2024_11",
+  bot_profile: "vision_2024_10",
   max_duration: 600,
   services: {
     llm: "anthropic",
