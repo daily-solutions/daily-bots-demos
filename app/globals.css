@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 text-white rounded;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary-500 hover:bg-primary-600;
+  }
+
+  .btn-secondary {
+    @apply btn bg-secondary-500 hover:bg-secondary-600;
+  }
+
+  .btn-accent {
+    @apply btn bg-accent-500 hover:bg-accent-600;
+  }
+
+  .table-cell {
+    @apply border p-2;
+  }
+
+  .download-link {
+    @apply inline-flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-purple-600 hover:text-purple-800 bg-purple-50 hover:bg-purple-100 rounded-md transition-colors duration-200;
+  }
+
+  .loading-spinner {
+    @apply animate-spin rounded-full h-8 w-8 border-b-2 border-purple-500;
+  }
+
+  .empty-state {
+    @apply flex flex-col items-center justify-center py-12 px-4;
+  }
+
+  .empty-state-icon {
+    @apply w-12 h-12 text-gray-400 mb-4;
+  }
+
+  .empty-state-title {
+    @apply text-gray-500 text-lg font-medium;
+  }
+
+  .empty-state-subtitle {
+    @apply text-gray-400 text-sm mt-1;
+  }
+}
+
 @tailwind utilities;
