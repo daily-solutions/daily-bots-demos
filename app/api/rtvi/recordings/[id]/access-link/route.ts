@@ -7,9 +7,9 @@ export async function GET(req: Request) {
   console.log("----- id:", id);
 
   try {
-    const DAILY_BOTS_API_KEY = process.env.DAILY_BOTS_API_KEY;
+    const DAILY_API_KEY = process.env.DAILY_API_KEY;
 
-    if (!DAILY_BOTS_API_KEY) {
+    if (!DAILY_API_KEY) {
       return NextResponse.json(
         { error: "Daily API key not configured" },
         { status: 500 }
@@ -19,7 +19,7 @@ export async function GET(req: Request) {
     const options = {
       method: "GET",
       headers: {
-        Authorization: `Bearer ${DAILY_BOTS_API_KEY}`,
+        Authorization: `Bearer ${DAILY_API_KEY}`,
       },
     };
 

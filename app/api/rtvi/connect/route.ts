@@ -2,12 +2,12 @@ import { defaultConfig } from "../../../../rtvi.config";
 
 export async function POST(req: Request) {
   console.log(req);
-  const { DAILY_BOTS_API_KEY, DAILY_BOTS_URL } = process.env;
+  const { DAILY_API_KEY, DAILY_BOTS_URL } = process.env;
 
-  if (!DAILY_BOTS_API_KEY || !DAILY_BOTS_URL) {
+  if (!DAILY_API_KEY || !DAILY_BOTS_URL) {
     console.error(
       "Required environment variables are missing",
-      DAILY_BOTS_API_KEY,
+      DAILY_API_KEY,
       DAILY_BOTS_URL
     );
     return Response.json(
@@ -24,7 +24,7 @@ export async function POST(req: Request) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${DAILY_BOTS_API_KEY}`,
+      Authorization: `Bearer ${DAILY_API_KEY}`,
     },
     body: JSON.stringify(payload),
   });
