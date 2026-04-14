@@ -1,3 +1,6 @@
+> [!WARNING]
+> **DAILY BOTS AND ALL ASSOCIATED DEMOS HAVE BEEN SUNSETTED AND REPLACED BY [PIPECAT CLOUD](https://www.daily.co/products/pipecat-cloud/)**
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
